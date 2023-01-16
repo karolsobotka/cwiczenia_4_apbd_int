@@ -97,14 +97,6 @@ namespace Animals.Services
                     }
                     else command.CommandText = "SELECT * FROM Animal ORDER BY Name ASC";
 
-                    /*
-                     * Note: not working solution to order something by @value
-                     * 
-                     * if (String.IsNullOrEmpty(orderBy))
-                     *      command.Parameters.AddWithValue("value", "Name");
-                     * else command.Parameters.AddWithValue("value", orderBy);
-                     * 
-                    */
 
                     connection.Open();
                     SqlDataReader reader = command.ExecuteReader();

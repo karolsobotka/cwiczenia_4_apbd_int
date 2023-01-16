@@ -10,7 +10,6 @@ namespace Animals.Model
         [MaxLength(100)]
         [Required(ErrorMessage = "Name should not nullable!")]
         public string Name { get; set; }
-        // Note: nullable 
         [MaxLength(200)]
         public string Description { get; set; }
         [MaxLength(100)]
